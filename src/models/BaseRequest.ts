@@ -1,0 +1,3 @@
+interface BaseRequest {
+    typeRequest: string
+}

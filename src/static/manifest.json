@@ -1,0 +1,98 @@
+{
+  "name": "Chrome Template",
+  "description": "This is for JSGuru projects",
+  "key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmklgvWbWMJhjjlpG3ep8\nLVsOswXZEu7se8DAYYtFlSZvfYFzrwzPFax+F/dZ8Djnlu5GL/auk+UriqSlwPb7\n0QIOOX53+rkt5a+LZkuciCrTq1Ajdo0Sww/xaBwMLOLhFR8sp3TfPoRjP5mIg4x0\nLFEQYNhoqpVl7aKrG24dpJAuENRlVFn3YHbd4VeNu7b3TkZgi/UQI0XwoQ3SmQcm\nhGtZQEEEkq9I5oLJlUdogAuk6Ip3ZieiU+SI533Z4nbN8jH6aB7sns1LLOqgiBEK\naM39dGG4Hjqlmrh40v/HxyUJ3kBq1Zoo/7l4AdcOcS/dC9JCVOmshTqkfu2NZAPc\nAQIDAQAB\n-----END PUBLIC KEY-----",
+  "version": "1.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "peak48.png",
+    "48": "peak128.png",
+    "128": "peak192.png"
+  },
+  "options_page": "options.html",
+  "chrome_url_overrides": {
+    "newtab": "new_tab.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/peakLogo.svg",
+        "assets/cultureLogo.svg",
+        "assets/imagewal.jpg",
+        "assets/pcicon.svg",
+        "assets/coffeeIcon.svg",
+        "assets/waterIcon.svg",
+        "assets/pcicon.svg",
+        "assets/gmail_icon.png",
+        "assets/habitTableListIcon.svg",
+        "assets/habitTableCalendarIcon.svg",
+        "assets/trendingUpIcon.svg",
+        "assets/habitStatisticsIcon.svg",
+        "profile_logo.svg",
+        "assets/home_icon.svg",
+        "assets/spotify_icon.svg",
+        "assets/modalOverlay.png",
+        "assets/skipIcon.png",
+        "assets/videoIcon.svg",
+        "assets/home_icon.svg",
+        "my-spotify.js",
+        "tutorialWhiteIcon.svg",
+        "customIconPR.svg",
+        "distanceIcon.svg",
+        "repsIcon.svg",
+        "repsTimeIcon.svg",
+        "timeDistanceIcon.svg",
+        "timeIcon.svg",
+        "weightRepsIcon.svg",
+        "trashIconWhite.svg",
+        "assets/spotifyWhite.svg",
+        "assets/arrowUp",
+        "assets/arrowDown",
+        "assets/statsBlackIcon.svg",
+        "assets/personalRecordBlackIcon.svg",
+        "assets/flagBlackIcon.svg",
+        "assets/felix-lam.jpeg",
+        "assets/ty-koh.jpeg",
+        "assets/facebookWhite.svg",
+        "assets/twitterWhite.svg",
+        "assets/discordWhite.svg",
+        "assets/linkedinWhite.svg",
+        "assets/chromeStore.svg",
+        "assets/mathieu-chirco1.jpeg",
+        "assets/ty-koh1.jpeg",
+        "assets/felix-lam1.jpeg",
+        "assets/lucas-clara1.jpeg",
+        "assets/checkedIconBlack.svg",
+        "assets/adita.jpeg",
+        "assets/boxed_water.jpeg",
+        "assets/karsten.jpeg",
+        "assets/tomas.jpeg"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Peak Culture",
+    "default_icon": "peak48.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "identity",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*.spotify.com/*"
+  ],
+  "oauth2": {
+    "client_id": "4549123749-r58g8au9sue2e7uohrfh0sqn5bumo6j1.apps.googleusercontent.com",
+    "scopes": [
+      "profile email"
+    ]
+  }
+}
